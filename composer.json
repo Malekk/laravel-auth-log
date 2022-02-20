@@ -1,0 +1,19 @@
+{
+    "name": "malekk/laravel-auth-log",
+    "description": "Laravel package for authentication log",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Malekk\\LaravelAuthLog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Malek Cherif",
+            "email": "cherifmalekk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
