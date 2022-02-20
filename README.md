@@ -10,7 +10,9 @@ You may use Composer to install Laravel Authentication Log into your Laravel pro
 
 ### Configuration
 
-After installing the laravel-auth-Log, you need to migrate your database. The laravel-auth-log migration will create the table your application needs to store authentication logs:
+Once installed, if you are not using automatic package discovery, then you need to register the `Malekk\LaravelAuthLog\AuthLogServiceProvider` service provider in your config/app.php.
+
+You need to migrate your database, the laravel-auth-log migration will create the table to store authentication logs:
 
     php artisan migrate
 
