@@ -16,7 +16,7 @@ class CreateAuthenticationLogsTable extends Migration
         Schema::create('authentication_logs', function (Blueprint $table) {
             $table->id();
             $table->string('username')->nullable();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();//only if success login
+            $table->unsignedBigInteger('user_id');//only if success login
             $table->string('ip_address', 45);
             $table->text('user_agent');
             $table->boolean('is_success')->default(false);
